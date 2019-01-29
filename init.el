@@ -51,3 +51,6 @@
 ;; set default derectory
 (setq default-directory "~/")
 (setq command-line-default-directory "~/")
+
+;; 日本語関連
+(setenv "LANG" "ja_JP.UTF-8")
