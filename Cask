@@ -3,6 +3,7 @@
 (depends-on "cask")
 (depends-on "doom-themes")
 (depends-on "editorconfig")
+(depends-on "helm")
 (depends-on "init-loader")
 (depends-on "magit")
 (depends-on "mozc")
