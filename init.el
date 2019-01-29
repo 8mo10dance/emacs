@@ -47,3 +47,7 @@
 (setq command-line-default-directory "~/")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; set default derectory
+(setq default-directory "~/")
+(setq command-line-default-directory "~/")
