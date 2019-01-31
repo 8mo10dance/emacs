@@ -1,4 +1,5 @@
 (source gnu)
 (source melpa)
 (depends-on "cask")
+(depends-on "init-loader")
 (depends-on "prettier-js")

@@ -1,3 +1,14 @@
+(package-initialize)
+
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(require 'cask)
+(cask-initialize)
+
+(init-loader-load)
+
 ;; load-path
 (defun add-to-load-path (&rest paths) ;; &restは引数のリストをまとめて関数に渡す
   (let (path)
@@ -7,15 +18,6 @@
 	(add-to-list 'load-path default-directory)
 	(if (fboundp 'normal-top-level-add-subdirs-to-load-path)
 	    (normal-top-level-add-subdirs-to-load-path))))))
-
-(require 'package)
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(package-initialize)
-
-;; Cask
-(require 'cask) ;; for only mac
-(cask-initialize)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
