@@ -3,5 +3,4 @@
  '((R . t)
    (emacs-lisp . t)
    (haskell . t)
-   (ruby . t)
-   (shell . t)))
+   (ruby . t)))
