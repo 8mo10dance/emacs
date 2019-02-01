@@ -4,4 +4,4 @@
    (emacs-lisp . t)
    (haskell . t)
    (ruby . t)
-   (sh . t)))
+   (shell . t)))
