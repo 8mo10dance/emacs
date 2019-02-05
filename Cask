@@ -4,3 +4,4 @@
 (depends-on "init-loader")
 (depends-on "prettier-js")
 (depends-on "undo-tree")
+(depends-on "plantuml-mode")
