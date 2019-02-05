@@ -3,3 +3,4 @@
 (depends-on "cask")
 (depends-on "init-loader")
 (depends-on "prettier-js")
+(depends-on "undo-tree")
