@@ -3,6 +3,7 @@
 (depends-on "cask")
 (depends-on "init-loader")
 (depends-on "plantuml-mode")
+(depends-on "magit")
 (depends-on "prettier-js")
 (depends-on "undo-tree")
 (depends-on "web-mode")
