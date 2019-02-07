@@ -6,4 +6,5 @@
  '((R . t)
    (emacs-lisp . t)
    (haskell . t)
-   (ruby . t)))
+   (ruby . t)
+   (plantuml . t)))
