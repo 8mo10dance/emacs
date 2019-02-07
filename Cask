@@ -2,5 +2,6 @@
 (source melpa)
 (depends-on "cask")
 (depends-on "init-loader")
+(depends-on "plantuml-mode")
 (depends-on "prettier-js")
 (depends-on "undo-tree")
