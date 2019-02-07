@@ -5,3 +5,4 @@
 (depends-on "plantuml-mode")
 (depends-on "prettier-js")
 (depends-on "undo-tree")
+(depends-on "web-mode")
