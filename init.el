@@ -26,3 +26,8 @@
 (require 'prettier-js)
 (add-hook 'js2-mode-hook 'prettier-js-mode)
 (add-hook 'web-mode-hook 'prettier-js-mode)
+
+;; other window
+(define-key global-map (kbd "C-t") 'other-window)
+(require 'dired)
+(define-key dired-mode-map (kbd "C-t") 'other-window)
