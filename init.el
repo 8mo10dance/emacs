@@ -4,7 +4,7 @@
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-(require 'cask)
+(require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
 (init-loader-load)
