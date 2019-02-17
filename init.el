@@ -15,6 +15,11 @@
 (load-theme 'misterioso t)
 (set-face-attribute 'default nil :family "Ricty" :height 140)
 
+;; language
+(set-language-environment "Japanese")
+(setq default-input-method "japanese-mozc")
+(prefer-coding-system 'utf-8)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; other window
