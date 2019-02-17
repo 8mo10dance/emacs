@@ -11,6 +11,12 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; appearance
+(load-theme 'misterioso t)
+(set-face-attribute 'default nil :family "Ricty" :height 140)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; other window
 (define-key global-map (kbd "C-t") 'other-window)
 (require 'dired)
