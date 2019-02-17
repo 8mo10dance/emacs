@@ -17,6 +17,10 @@
   (if (buffer-file-name)
       (if (string-match (car my-pair) buffer-file-name)
 	  (funcall (cdr my-pair)))))
+
 (add-hook 'web-mode-hook #'(lambda ()
                             (enable-minor-mode
                              '("\\.jsx?\\'" . prettier-js-mode))))
+(add-hook 'web-mode-hook #'(lambda ()
+                            (enable-minor-mode
+                             '("\\.tsx?\\'" . prettier-js-mode))))
