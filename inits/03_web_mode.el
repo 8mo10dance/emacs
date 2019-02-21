@@ -27,3 +27,6 @@
 (add-hook 'web-mode-hook #'(lambda ()
                             (enable-minor-mode
                              '("\\.tsx?\\'" . prettier-js-mode))))
+
+;; Indent
+(setq web-mode-css-indent-offset 2)
