@@ -19,3 +19,8 @@
 ;; 行番号表示
 (global-linum-mode t)
 (put 'upcase-region 'disabled nil)
+
+;; disabled tab
+(setq-default indent-tabs-mode nil)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
