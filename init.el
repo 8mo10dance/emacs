@@ -23,4 +23,7 @@
 ;; disabled tab
 (setq-default indent-tabs-mode nil)
 
+;; removing unnecessary spaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
