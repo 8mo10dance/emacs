@@ -26,4 +26,7 @@
 ;; removing unnecessary spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
