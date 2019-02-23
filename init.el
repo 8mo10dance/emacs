@@ -20,8 +20,6 @@
 (setq default-input-method "japanese-mozc")
 (prefer-coding-system 'utf-8)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 ;; other window
 (define-key global-map (kbd "C-t") 'other-window)
 (require 'dired)
