@@ -15,6 +15,7 @@
 (define-key global-map (kbd "C-t") 'other-window)
 (require 'dired)
 (define-key dired-mode-map (kbd "C-t") 'other-window)
+(put 'dired-find-alternate-file 'disabled nil)
 
 ;; 行番号表示
 (global-linum-mode t)
