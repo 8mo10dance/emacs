@@ -6,5 +6,6 @@
 (depends-on "mozc")
 (depends-on "plantuml-mode")
 (depends-on "prettier-js")
+(depends-on "rinari")
 (depends-on "undo-tree")
 (depends-on "web-mode")
