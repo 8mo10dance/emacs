@@ -17,5 +17,6 @@
  '((R . t)
    (emacs-lisp . t)
    (haskell . t)
-   (ruby . t)
-   (plantuml . t)))
+   (sql . t)
+   (plantuml . t)
+   (ruby . t)))
