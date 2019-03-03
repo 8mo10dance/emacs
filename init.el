@@ -13,7 +13,9 @@
 
 ;; appearance
 (load-theme 'misterioso t)
-(set-face-attribute 'default nil :family "Ricty" :height 140)
+(when (eq system-type 'gnu/linux)
+  (add-to-list 'default-frame-alist
+               '(font . "Ricty-18")))
 
 ;; language
 (set-language-environment "Japanese")
