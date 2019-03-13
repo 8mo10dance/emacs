@@ -3,7 +3,8 @@
          ("\\.tsx?\\'" . web-mode)
          ("\\.jsp\\'" . web-mode)
          ("\\.erb\\'" . web-mode)
-         ("\\.scss\\'" . web-mode))
+         ("\\.scss\\'" . web-mode)
+         ("\\.nghtml\\'" . web-mode))
   :init
   (add-hook 'web-mode-hook #'(lambda ()
                                (enable-minor-mode
