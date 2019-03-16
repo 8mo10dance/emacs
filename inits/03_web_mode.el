@@ -1,18 +1,16 @@
-(setq auto-mode-alist
-      (append '(("\\.jsx?\\'" . web-mode))
-	      auto-mode-alist))
-(setq auto-mode-alist
-      (append '(("\\.tsx?\\'" . web-mode))
-	      auto-mode-alist))
-(setq auto-mode-alist
-      (append '(("\\.jsp\\'" . web-mode))
-	      auto-mode-alist))
-(setq auto-mode-alist
-      (append '(("\\.erb\\'" . web-mode))
-	      auto-mode-alist))
-(setq auto-mode-alist
-      (append '(("\\.scss\\'" . web-mode))
-	      auto-mode-alist))
+(use-package web-mode
+  :mode (("\\.jsx?\\'" . web-mode)
+         ("\\.tsx?\\'" . web-mode)
+         ("\\.jsp\\'" . web-mode)
+         ("\\.erb\\'" . web-mode)
+         ("\\.scss\\'" . web-mode))
+  :init
+  (add-hook 'web-mode-hook #'(lambda ()
+                               (enable-minor-mode
+                                '("\\.jsx?\\'" . prettier-js-mode))))
+  (add-hook 'web-mode-hook #'(lambda ()
+                               (enable-minor-mode
+                                '("\\.tsx?\\'" . prettier-js-mode)))))
 
 ;; Web-mode is a popular mode for editing .js and .jsx files, but it is used to edit other template files too. If you want to hook prettier-js to web-mode for .js and .jsx files only, you can define a helper function like this:
 (defun enable-minor-mode (my-pair)
@@ -20,14 +18,3 @@
   (if (buffer-file-name)
       (if (string-match (car my-pair) buffer-file-name)
 	  (funcall (cdr my-pair)))))
-
-(add-hook 'web-mode-hook #'(lambda ()
-                            (enable-minor-mode
-                             '("\\.jsx?\\'" . prettier-js-mode))))
-(add-hook 'web-mode-hook #'(lambda ()
-                            (enable-minor-mode
-                             '("\\.tsx?\\'" . prettier-js-mode))))
-
-;; Indent
-(setq web-mode-css-indent-offset 2)
-(setq web-mode-markup-indent-offset 2)
