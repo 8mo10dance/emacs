@@ -9,4 +9,5 @@
 (depends-on "rinari")
 (depends-on "rubocop")
 (depends-on "undo-tree")
+(depends-on "use-package")
 (depends-on "web-mode")
