@@ -14,7 +14,6 @@
 ;; appearance
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(load-theme 'misterioso t)
 (when (eq system-type 'gnu/linux)
   (add-to-list 'default-frame-alist
                '(font . "Ricty-18")))
