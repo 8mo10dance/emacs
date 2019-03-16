@@ -40,4 +40,7 @@
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; show fill path opening on title
+(setq frame-title-format "%f")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
