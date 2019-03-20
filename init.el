@@ -36,9 +36,6 @@
 ;; removing unnecessary spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;; magit
-(global-set-key (kbd "C-x g") 'magit-status)
-
 ;; show fill path opening on title
 (setq frame-title-format "%f")
 
