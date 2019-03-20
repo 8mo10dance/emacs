@@ -9,6 +9,7 @@
 (depends-on "prettier-js")
 (depends-on "rinari")
 (depends-on "rubocop")
+(depends-on "ruby-electric")
 (depends-on "undo-tree")
 (depends-on "use-package")
 (depends-on "web-mode")
