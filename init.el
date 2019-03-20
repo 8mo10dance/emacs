@@ -23,8 +23,8 @@
 (setq default-input-method "japanese-mozc")
 (prefer-coding-system 'utf-8)
 
-;; other window
-(define-key global-map (kbd "C-t") 'other-window)
+;; other window using arrow keys
+(windmove-default-keybindings)
 
 ;; 行番号表示
 (global-linum-mode t)
