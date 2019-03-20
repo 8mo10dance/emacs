@@ -39,4 +39,7 @@
 ;; show fill path opening on title
 (setq frame-title-format "%f")
 
+;; auto revert buffer
+(global-auto-revert-mode 1)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
