@@ -5,6 +5,9 @@
   ;; disable magic comments such as "coding: utf-8"
   (ruby-insert-encoding-magic-comment nil))
 
+(use-package ruby-electric-mode
+  :hook ruby-mode)
+
 ;; rails ide
 (use-package rinari
   :init
