@@ -42,4 +42,8 @@
 ;; auto revert buffer
 (global-auto-revert-mode 1)
 
+;; set default derectory
+(setq default-directory "~/")
+(setq command-line-default-directory "~/")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
