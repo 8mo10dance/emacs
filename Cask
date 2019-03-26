@@ -5,6 +5,7 @@
 (depends-on "editorconfig")
 (depends-on "helm")
 (depends-on "htmlize")
+(depends-on "impatient-mode")
 (depends-on "init-loader")
 (depends-on "magit")
 (depends-on "mozc")
