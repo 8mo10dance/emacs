@@ -8,6 +8,7 @@
 (depends-on "impatient-mode")
 (depends-on "init-loader")
 (depends-on "magit")
+(depends-on "markdown-mode")
 (depends-on "mozc")
 (depends-on "plantuml-mode")
 (depends-on "prettier-js")
