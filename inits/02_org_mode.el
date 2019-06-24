@@ -19,4 +19,5 @@
    (haskell . t)
    (sql . t)
    (plantuml . t)
+   (shell . t)
    (ruby . t)))
