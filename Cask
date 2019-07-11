@@ -15,6 +15,7 @@
 (depends-on "rinari")
 (depends-on "rubocop")
 (depends-on "ruby-electric")
+(depends-on "solarized-theme")
 (depends-on "undo-tree")
 (depends-on "use-package")
 (depends-on "web-mode")
