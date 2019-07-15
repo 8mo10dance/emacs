@@ -16,7 +16,7 @@
 (menu-bar-mode 0)
 (when (eq system-type 'gnu/linux)
   (add-to-list 'default-frame-alist
-               '(font . "Cica-16")))
+               '(font . "Cica")))
 
 ;; language
 (set-language-environment "Japanese")
