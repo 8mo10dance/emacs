@@ -14,9 +14,7 @@
 ;; appearance
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(when (eq system-type 'gnu/linux)
-  (add-to-list 'default-frame-alist
-               '(font . "Cica")))
+(add-to-list 'default-frame-alist '(font . "Cica-14"))
 
 ;; language
 (set-language-environment "Japanese")
