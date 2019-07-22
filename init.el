@@ -24,6 +24,8 @@
 ;; other window using arrow keys
 (windmove-default-keybindings)
 
+(define-key global-map (kbd "C-t") 'other-window)
+
 ;; 行番号表示
 (global-linum-mode t)
 (put 'upcase-region 'disabled nil)
