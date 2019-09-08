@@ -11,8 +11,12 @@
                                 '("\\.jsx?\\'" . prettier-js-mode))))
   (add-hook 'web-mode-hook #'(lambda ()
                                (enable-minor-mode
-                                '("\\.tsx?\\'" . prettier-js-mode)))))
-
+                                '("\\.tsx?\\'" . prettier-js-mode))))
+  (add-hook 'web-mode-hook
+            (lambda ()
+              (when (equal web-mode-content-type "jsx")
+                (flycheck-add-mode 'javascript-eslint 'web-mode)
+                (flycheck-mode)))))
 ;; Web-mode is a popular mode for editing .js and .jsx files, but it is used to edit other template files too. If you want to hook prettier-js to web-mode for .js and .jsx files only, you can define a helper function like this:
 (defun enable-minor-mode (my-pair)
   "Enable minor mode if filename match the regexp.  MY-PAIR is a cons cell (regexp . minor-mode)."
