@@ -54,3 +54,5 @@
 
 ;; 日本語関連
 (setenv "LANG" "ja_JP.UTF-8")
+
+(require 'flycheck)
