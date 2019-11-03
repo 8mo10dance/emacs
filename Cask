@@ -6,6 +6,7 @@
 (depends-on "dockerfile-mode")
 (depends-on "doom-themes")
 (depends-on "editorconfig")
+(depends-on "flycheck")
 (depends-on "helm")
 (depends-on "htmlize")
 (depends-on "impatient-mode")
