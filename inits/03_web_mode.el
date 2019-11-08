@@ -15,7 +15,9 @@
   (add-hook 'web-mode-hook
             (lambda ()
               (flycheck-add-mode 'javascript-eslint 'web-mode)
-              (flycheck-mode t))))
+              (flycheck-mode t)))
+  :config
+  (setq web-mode-markup-indent-offset 2))
 
 ;; Web-mode is a popular mode for editing .js and .jsx files, but it is used to edit other template files too. If you want to hook prettier-js to web-mode for .js and .jsx files only, you can define a helper function like this:
 (defun enable-minor-mode (my-pair)
