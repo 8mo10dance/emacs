@@ -47,6 +47,8 @@
 (setq command-line-default-directory "~/")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ignore ring bell
+(setq ring-bell-function 'ignore)
 
 ;; set default derectory
 (setq default-directory "~/")
