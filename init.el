@@ -14,7 +14,7 @@
 ;; appearance
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(add-to-list 'default-frame-alist '(font . "Cica-14"))
+(add-to-list 'default-frame-alist '(font . "Cica-16"))
 
 ;; language
 (set-language-environment "Japanese")
