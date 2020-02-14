@@ -14,6 +14,7 @@
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "mozc")
+(depends-on "multi-term")
 (depends-on "plantuml-mode")
 (depends-on "prettier-js")
 (depends-on "rinari")
