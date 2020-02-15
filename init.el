@@ -58,3 +58,10 @@
 (setenv "LANG" "ja_JP.UTF-8")
 
 (require 'flycheck)
+
+(add-hook 'term-mode-hook
+    (lambda()
+      (global-unset-key (kbd "C-r"))
+;	    (local-unset-key (kbd "C-r"))
+      (message "%s" "This is in term mode and hook enabled.")
+))
