@@ -21,3 +21,8 @@
    (plantuml . t)
    (shell . t)
    (ruby . t)))
+
+;; org-capture
+(setq org-directory "~/iris/gaco/")
+(setq org-default-notes-file (concat org-directory "todo.org"))
+(global-set-key (kbd "C-c c") 'org-capture)
