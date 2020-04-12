@@ -26,3 +26,7 @@
 (setq org-directory "~/iris/gaco/")
 (setq org-default-notes-file (concat org-directory "todo.org"))
 (global-set-key (kbd "C-c c") 'org-capture)
+
+;; org-agenda
+(setq org-agenda-files (mapcar (function (lambda (x) (concat org-directory x))) '("todo.org")))
+(global-set-key (kbd "C-c a") 'org-agenda)
