@@ -7,6 +7,7 @@
 (depends-on "doom-themes")
 (depends-on "editorconfig")
 (depends-on "flycheck")
+(depends-on "geiser")
 (depends-on "helm")
 (depends-on "htmlize")
 (depends-on "impatient-mode")

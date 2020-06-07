@@ -16,6 +16,7 @@
  'org-babel-load-languages
  '((R . t)
    (emacs-lisp . t)
+   (scheme . t)
    (haskell . t)
    (sql . t)
    (plantuml . t)
