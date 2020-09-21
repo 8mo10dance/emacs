@@ -9,6 +9,8 @@
 
 (init-loader-load)
 
+(exec-path-from-shell-initialize)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; appearance
