@@ -11,6 +11,11 @@
   (setq org-src-fontify-natively t)
   ;; plantuml
   (setq org-plantuml-jar-path "~/.emacs.d/lib/plantuml.jar")
+  :init
+  ;; org-capture
+  (setq org-directory "~/iris/gaco/")
+  (setq org-default-notes-file (concat org-directory "todo.org"))
+  (global-set-key (kbd "C-c c") 'org-capture)
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((R . t)
@@ -21,12 +26,6 @@
      (plantuml . t)
      (shell . t)
      (ruby . t)))
-  :init
-  ;; org-capture
-  (setq org-directory "~/iris/gaco/")
-  (setq org-default-notes-file (concat org-directory "todo.org"))
-  (global-set-key (kbd "C-c c") 'org-capture)
-
   ;; org-agenda
   (setq org-agenda-files (mapcar (function (lambda (x) (concat org-directory x))) '("todo.org")))
   (global-set-key (kbd "C-c a") 'org-agenda))
