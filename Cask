@@ -9,7 +9,6 @@
 (depends-on "exec-path-from-shell")
 (depends-on "flycheck")
 (depends-on "geiser")
-(depends-on "helm")
 (depends-on "impatient-mode")
 (depends-on "init-loader")
 (depends-on "magit")

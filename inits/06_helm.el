@@ -1,4 +1,5 @@
-(use-package helm-config
+(use-package helm
+  :ensure t
   :config
   (helm-mode 1)
   (define-key global-map (kbd "M-x")     'helm-M-x)
