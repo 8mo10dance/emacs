@@ -19,8 +19,6 @@
   :config
   (init-loader-load "~/.emacs.d/inits"))
 
-(exec-path-from-shell-initialize)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; appearance

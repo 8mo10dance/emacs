@@ -6,7 +6,6 @@
 (depends-on "dockerfile-mode")
 (depends-on "doom-themes")
 (depends-on "editorconfig")
-(depends-on "exec-path-from-shell")
 (depends-on "flycheck")
 (depends-on "geiser")
 (depends-on "impatient-mode")
