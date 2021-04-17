@@ -7,6 +7,13 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+
 (init-loader-load)
 
 (exec-path-from-shell-initialize)
