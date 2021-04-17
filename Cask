@@ -10,7 +10,6 @@
 (depends-on "flycheck")
 (depends-on "geiser")
 (depends-on "impatient-mode")
-(depends-on "init-loader")
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "mozc")

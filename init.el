@@ -14,7 +14,10 @@
 (eval-when-compile
   (require 'use-package))
 
-(init-loader-load)
+(use-package init-loader
+  :ensure t
+  :config
+  (init-loader-load "~/.emacs.d/inits"))
 
 (exec-path-from-shell-initialize)
 
