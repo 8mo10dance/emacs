@@ -7,9 +7,17 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-(init-loader-load)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(exec-path-from-shell-initialize)
+(eval-when-compile
+  (require 'use-package))
+
+(use-package init-loader
+  :ensure t
+  :config
+  (init-loader-load "~/.emacs.d/inits"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
