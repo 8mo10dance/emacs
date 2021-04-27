@@ -4,7 +4,6 @@
 (depends-on "docker")
 (depends-on "docker-tramp")
 (depends-on "dockerfile-mode")
-(depends-on "doom-themes")
 (depends-on "editorconfig")
 (depends-on "flycheck")
 (depends-on "geiser")
