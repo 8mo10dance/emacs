@@ -1,2 +1,2 @@
-(use-package dracula-theme
+(use-package tommyh-theme
   :ensure t)
