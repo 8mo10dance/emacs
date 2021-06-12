@@ -1,3 +1,6 @@
+(use-package rubocop
+  :ensure t)
+
 (use-package ruby-mode
   :mode (("\\.rb\\'" . ruby-mode)
          ("\\.schema\\'" . ruby-mode))
